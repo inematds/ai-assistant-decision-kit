@@ -11,6 +11,11 @@ Material de **terceiro**, baixado em 2026-08-24 para estudo. Ajuda a decidir **q
 
 > **Regra deste repositório:** o conteúdo de `kit/`, `origem/` e `zips/` é cópia fiel do upstream e fica **intacto**. Nossas adições (este README e toda a pasta `traducao/`) vivem fora dessas pastas. Ver `CLAUDE.md`.
 
+
+## 📖 Guia de uso
+
+Guia completo (landing + passo a passo): **https://inematds.github.io/ai-assistant-decision-kit/guia/**
+
 ---
 
 ## Estrutura completa
