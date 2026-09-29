@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>AI Assistant Decision Kit — decida qual assistente de IA serve pro seu trabalho</title>
-<meta name="description" content="Kit de decisão (MIT, Mark Kashef) traduzido para pt-BR: compare assistentes de IA por modelo operacional antes da marca, com entrevista, pesquisa datada e piloto de sete dias.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<meta content="Kit de decisão (MIT, Mark Kashef) traduzido para pt-BR: compare assistentes de IA por modelo operacional antes da marca, com entrevista, pesquisa datada e piloto de sete dias." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
@@ -90,112 +91,103 @@
   footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
   .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
 </style>
-</head>
-<body>
-
+<link href="https://inematds.github.io/ai-assistant-decision-kit/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/ai-assistant-decision-kit/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/ai-assistant-decision-kit/guia/es/" hreflang="es" rel="alternate"/></head>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <nav><div class="wrap">
-  <a class="brand" href="#top"><span class="emoji">🧭</span> AI Assistant Decision Kit</a>
-  <span class="sep">|</span>
-  <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
-    <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
-  </span>
-  <div class="links">
-    <a class="sec" href="#oque">O que é</a>
-    <a class="sec" href="#fluxo">Como funciona</a>
-    <a class="sec" href="#guia">Guia de uso</a>
-    <a class="sec" href="#dossies">Dossiês</a>
-    <a class="sec" href="#notas">Limites</a>
-    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/ai-assistant-decision-kit" target="_blank" rel="noopener">GitHub</a>
-  </div>
+<a class="brand" href="#top"><span class="emoji">🧭</span> AI Assistant Decision Kit</a>
+<span class="sep">|</span>
+<span class="clubpro">
+<a class="inema" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+<span class="sep">-</span>
+<a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+</span>
+<div class="links">
+<a class="sec" href="#oque">O que é</a>
+<a class="sec" href="#fluxo">Como funciona</a>
+<a class="sec" href="#guia">Guia de uso</a>
+<a class="sec" href="#dossies">Dossiês</a>
+<a class="sec" href="#notas">Limites</a>
+<button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
+<a class="btn" href="https://github.com/inematds/ai-assistant-decision-kit" rel="noopener" target="_blank">GitHub</a>
+</div>
 </div></nav>
-
 <header class="hero" id="top">
-  <div class="glow"></div>
-  <div class="wrap">
-    <div>
-      <span class="chip">Material de terceiro · MIT · traduzido para pt-BR</span>
-      <h1>Pare de reconstruir o mesmo assistente <span class="amb">em outro lugar</span></h1>
-      <p class="lead">Toda semana sai um assistente de IA novo e o seu setup atual parece obsoleto. Este kit inverte a pergunta: em vez de "qual é o melhor?", ele apura o que de fato falha no seu trabalho hoje — e quase sempre a resposta certa é <em>ficar onde está</em>.</p>
-      <div class="cta">
-        <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/ai-assistant-decision-kit" target="_blank" rel="noopener">Ver no GitHub</a>
-      </div>
-    </div>
-    <figure><img src="assets/hero.png" alt="Quatro maquetes de casas diferentes ligadas por linhas âmbar a uma bússola de latão"></figure>
-  </div>
+<div class="glow"></div>
+<div class="wrap">
+<div>
+<span class="chip">Material de terceiro · MIT · traduzido para pt-BR</span>
+<h1>Pare de reconstruir o mesmo assistente <span class="amb">em outro lugar</span></h1>
+<p class="lead">Toda semana sai um assistente de IA novo e o seu setup atual parece obsoleto. Este kit inverte a pergunta: em vez de "qual é o melhor?", ele apura o que de fato falha no seu trabalho hoje — e quase sempre a resposta certa é <em>ficar onde está</em>.</p>
+<div class="cta">
+<a class="btn" href="#guia">Começar o guia</a>
+<a class="btn ghost" href="https://github.com/inematds/ai-assistant-decision-kit" rel="noopener" target="_blank">Ver no GitHub</a>
+</div>
+</div>
+<figure><img alt="Quatro maquetes de casas diferentes ligadas por linhas âmbar a uma bússola de latão" src="assets/hero.png"/></figure>
+</div>
 </header>
-
 <section id="oque"><div class="wrap">
-  <span class="chip">O que é</span>
-  <h2>Um kit de decisão, não uma resenha de produto</h2>
-  <p class="sub">Criado por Mark Kashef e publicado sob licença MIT. Este repositório guarda o material original intacto e acrescenta a tradução completa em português.</p>
-  <div class="grid g3">
-    <div class="card"><h3>🧭 Escolhe o caminho, não a marca</h3><p>Primeiro decide o modelo operacional — ficar onde está, assistente gerenciado, runtime open-source ou sistema próprio. Só depois entra o nome do produto.</p></div>
-    <div class="card"><h3>🔬 Orientado a evidência</h3><p>Entrevista antes de recomendar, registra data e fontes da pesquisa, e separa o que vem pronto de fábrica do teto que dá para alcançar com trabalho.</p></div>
-    <div class="card"><h3>🛡️ Anti-hype por construção</h3><p>Novidade em rede social não é motivo para migrar. Nenhum movimento sem teste reversível antes — e um piloto de sete dias com critério de saída.</p></div>
-  </div>
+<span class="chip">O que é</span>
+<h2>Um kit de decisão, não uma resenha de produto</h2>
+<p class="sub">Criado por Mark Kashef e publicado sob licença MIT. Este repositório guarda o material original intacto e acrescenta a tradução completa em português.</p>
+<div class="grid g3">
+<div class="card"><h3>🧭 Escolhe o caminho, não a marca</h3><p>Primeiro decide o modelo operacional — ficar onde está, assistente gerenciado, runtime open-source ou sistema próprio. Só depois entra o nome do produto.</p></div>
+<div class="card"><h3>🔬 Orientado a evidência</h3><p>Entrevista antes de recomendar, registra data e fontes da pesquisa, e separa o que vem pronto de fábrica do teto que dá para alcançar com trabalho.</p></div>
+<div class="card"><h3>🛡️ Anti-hype por construção</h3><p>Novidade em rede social não é motivo para migrar. Nenhum movimento sem teste reversível antes — e um piloto de sete dias com critério de saída.</p></div>
+</div>
 </div></section>
-
 <section id="fluxo"><div class="wrap">
-  <span class="chip">Como funciona</span>
-  <h2>Cinco etapas, um arquivo de referência para cada</h2>
-  <p class="sub">A skill não responde de imediato: ela conduz o processo abaixo, e cada etapa tem seu próprio arquivo em <code>references/</code>.</p>
-  <div class="flow">
-    <span>Entrevista</span><span class="arr">→</span>
-    <span>Pesquisa datada</span><span class="arr">→</span>
-    <span>Modelo de decisão</span><span class="arr">→</span>
-    <span>Dossiês</span><span class="arr">→</span>
-    <span>Pacote de decisão</span>
-  </div>
-  <div class="grid g3" style="margin-top:26px">
-    <div class="card"><h3>1 · Entrevista adaptativa</h3><p>Até 2 rodadas, no máximo 3 perguntas por rodada. Se você não apontar uma falha recorrente de verdade, "ficar onde está" vira a hipótese principal.</p></div>
-    <div class="card"><h3>2 · Pesquisa com carimbo</h3><p>Registra data, URLs abertas e commits inspecionados. Sem navegação disponível, usa os dossiês datados e avisa o que precisa ser reverificado.</p></div>
-    <div class="card"><h3>3 · Dez camadas comparadas</h3><p>Modelo e roteamento, runtime, arquivos, ferramentas, memória, skills, rotinas, interfaces, permissões e manutenção — padrão de fábrica versus teto alcançável.</p></div>
-  </div>
+<span class="chip">Como funciona</span>
+<h2>Cinco etapas, um arquivo de referência para cada</h2>
+<p class="sub">A skill não responde de imediato: ela conduz o processo abaixo, e cada etapa tem seu próprio arquivo em <code>references/</code>.</p>
+<div class="flow">
+<span>Entrevista</span><span class="arr">→</span>
+<span>Pesquisa datada</span><span class="arr">→</span>
+<span>Modelo de decisão</span><span class="arr">→</span>
+<span>Dossiês</span><span class="arr">→</span>
+<span>Pacote de decisão</span>
+</div>
+<div class="grid g3" style="margin-top:26px">
+<div class="card"><h3>1 · Entrevista adaptativa</h3><p>Até 2 rodadas, no máximo 3 perguntas por rodada. Se você não apontar uma falha recorrente de verdade, "ficar onde está" vira a hipótese principal.</p></div>
+<div class="card"><h3>2 · Pesquisa com carimbo</h3><p>Registra data, URLs abertas e commits inspecionados. Sem navegação disponível, usa os dossiês datados e avisa o que precisa ser reverificado.</p></div>
+<div class="card"><h3>3 · Dez camadas comparadas</h3><p>Modelo e roteamento, runtime, arquivos, ferramentas, memória, skills, rotinas, interfaces, permissões e manutenção — padrão de fábrica versus teto alcançável.</p></div>
+</div>
 </div></section>
-
 <section id="pre"><div class="wrap">
-  <span class="chip">Pré-requisitos</span>
-  <h2>O caminho mais curto não exige instalar nada</h2>
-  <p class="sub">Há três formas de usar, em ordem crescente de esforço. A primeira funciona em qualquer chat.</p>
-  <div class="grid g3">
-    <div class="card"><h3>Nenhum · só copiar e colar</h3><p>Abra o arquivo do prompt e cole o conteúdo inteiro em qualquer IA capaz. A entrevista roda dentro da conversa.</p><pre><span class="c"># o arquivo a copiar</span>
+<span class="chip">Pré-requisitos</span>
+<h2>O caminho mais curto não exige instalar nada</h2>
+<p class="sub">Há três formas de usar, em ordem crescente de esforço. A primeira funciona em qualquer chat.</p>
+<div class="grid g3">
+<div class="card"><h3>Nenhum · só copiar e colar</h3><p>Abra o arquivo do prompt e cole o conteúdo inteiro em qualquer IA capaz. A entrevista roda dentro da conversa.</p><pre><span class="c"># o arquivo a copiar</span>
 kit/prompts/PASTE-INTO-ANY-AI.md</pre></div>
-    <div class="card"><h3>Claude Code ou Codex</h3><p>Para instalar como skill, basta um dos dois no seu ambiente. A pasta já vem no formato Agent Skill válido.</p><pre><span class="c"># confira que existe</span>
+<div class="card"><h3>Claude Code ou Codex</h3><p>Para instalar como skill, basta um dos dois no seu ambiente. A pasta já vem no formato Agent Skill válido.</p><pre><span class="c"># confira que existe</span>
 <span class="k">ls</span> ~/.claude/skills</pre></div>
-    <div class="card"><h3>Internet · para o mapa</h3><p>O HTML local do mapa tem 1,3 KB — é só um redirect. O mapa interativo de verdade está online.</p><pre><span class="c"># o arquivo local é redirect</span>
+<div class="card"><h3>Internet · para o mapa</h3><p>O HTML local do mapa tem 1,3 KB — é só um redirect. O mapa interativo de verdade está online.</p><pre><span class="c"># o arquivo local é redirect</span>
 kit/website/OPEN-THE-AI-ASSISTANT-MAP.html</pre></div>
-  </div>
+</div>
 </div></section>
-
 <section id="guia"><div class="wrap">
-  <span class="chip">Guia de uso · passo a passo</span>
-  <h2>Do clone ao pacote de decisão</h2>
-  <p class="sub">Comandos reais. Escolha o passo 2 <em>ou</em> o passo 3 — não precisa dos dois.</p>
-
-  <div class="step"><div class="b">1</div><div>
-    <h3>Clone o repositório</h3>
-    <p>Traz o kit original, os dois zips intactos e a tradução em português.</p>
+<span class="chip">Guia de uso · passo a passo</span>
+<h2>Do clone ao pacote de decisão</h2>
+<p class="sub">Comandos reais. Escolha o passo 2 <em>ou</em> o passo 3 — não precisa dos dois.</p>
+<div class="step"><div class="b">1</div><div>
+<h3>Clone o repositório</h3>
+<p>Traz o kit original, os dois zips intactos e a tradução em português.</p>
 <pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/ai-assistant-decision-kit</span>
 <span class="k">cd</span> ai-assistant-decision-kit</pre>
-  </div></div>
-
-  <div class="step"><div class="b">2</div><div>
-    <h3>Caminho A — sem instalar nada</h3>
-    <p>Copie o prompt inteiro e cole no Claude, ChatGPT ou Codex. Existe a versão original e a traduzida.</p>
+</div></div>
+<div class="step"><div class="b">2</div><div>
+<h3>Caminho A — sem instalar nada</h3>
+<p>Copie o prompt inteiro e cole no Claude, ChatGPT ou Codex. Existe a versão original e a traduzida.</p>
 <pre><span class="c"># original em inglês</span>
 <span class="k">cat</span> kit/prompts/PASTE-INTO-ANY-AI.md
 
 <span class="c"># tradução em português</span>
 <span class="k">cat</span> traducao/prompts/PASTE-INTO-ANY-AI.md</pre>
-  </div></div>
-
-  <div class="step"><div class="b">3</div><div>
-    <h3>Caminho B — instalar como skill</h3>
-    <p>Um symlink basta. Instale sempre o <strong>original em inglês</strong> — a tradução é para leitura, não para execução.</p>
+</div></div>
+<div class="step"><div class="b">3</div><div>
+<h3>Caminho B — instalar como skill</h3>
+<p>Um symlink basta. Instale sempre o <strong>original em inglês</strong> — a tradução é para leitura, não para execução.</p>
 <pre><span class="c"># Claude Code</span>
 <span class="k">ln -s</span> ~/projetos/ai-assistant-decision-kit/kit/ai-assistant-system-advisor \
       ~/.claude/skills/ai-assistant-system-advisor
@@ -203,19 +195,17 @@ kit/website/OPEN-THE-AI-ASSISTANT-MAP.html</pre></div>
 <span class="c"># Codex</span>
 <span class="k">ln -s</span> ~/projetos/ai-assistant-decision-kit/kit/ai-assistant-system-advisor \
       ~/.codex/skills/ai-assistant-system-advisor</pre>
-  </div></div>
-
-  <div class="step"><div class="b">4</div><div>
-    <h3>Rode a auditoria</h3>
-    <p>Peça em linguagem natural. O modo padrão é a auditoria completa de decisão.</p>
+</div></div>
+<div class="step"><div class="b">4</div><div>
+<h3>Rode a auditoria</h3>
+<p>Peça em linguagem natural. O modo padrão é a auditoria completa de decisão.</p>
 <pre><span class="c"># no Claude Code ou Codex</span>
 Use the AI Assistant System Advisor to help me
 decide which setup fits my real work.</pre>
-  </div></div>
-
-  <div class="step"><div class="b">5</div><div>
-    <h3>Escolha o modo certo</h3>
-    <p>São quatro. Nomear o modo economiza uma rodada de entrevista.</p>
+</div></div>
+<div class="step"><div class="b">5</div><div>
+<h3>Escolha o modo certo</h3>
+<p>São quatro. Nomear o modo economiza uma rodada de entrevista.</p>
 <pre><span class="c"># auditoria de troca — vale sair do meu setup?</span>
 Run a switch audit: should I move from X to Y?
 
@@ -224,46 +214,41 @@ Do a product deep dive on Hermes Agent.
 
 <span class="c"># arquitetura própria</span>
 Draft an owned-system blueprint for my requirements.</pre>
-  </div></div>
-
-  <div class="step"><div class="b">6</div><div>
-    <h3>Abra o mapa interativo</h3>
-    <p>Cinco assistentes em destaque, cortes de arquitetura, quadro de tiers arrastável e mapa combinado de capacidades.</p>
+</div></div>
+<div class="step"><div class="b">6</div><div>
+<h3>Abra o mapa interativo</h3>
+<p>Cinco assistentes em destaque, cortes de arquitetura, quadro de tiers arrastável e mapa combinado de capacidades.</p>
 <pre><span class="s">https://ai-assistant-house-map.markkashef.chatgpt.site/</span></pre>
-  </div></div>
-
-  <div class="step"><div class="b">7</div><div>
-    <h3>Leia em português</h3>
-    <p>A documentação inteira foi traduzida, espelhando os mesmos nomes de arquivo do kit.</p>
+</div></div>
+<div class="step"><div class="b">7</div><div>
+<h3>Leia em português</h3>
+<p>A documentação inteira foi traduzida, espelhando os mesmos nomes de arquivo do kit.</p>
 <pre><span class="c"># índice das traduções + glossário adotado</span>
 <span class="k">cat</span> traducao/README.md</pre>
-  </div></div>
+</div></div>
 </div></section>
-
 <section id="dossies"><div class="wrap">
-  <span class="chip">Dossiês</span>
-  <h2>Seis caminhos, um arquivo cada</h2>
-  <p class="sub">Na auditoria completa a skill lê todos. Nos outros modos, só os que interessam ao caso.</p>
-  <div class="grid g3">
-    <div class="card"><h3>🤖 Grok Bot</h3><p>Gerenciado. Bot da xAI integrado ao ecossistema do X.</p></div>
-    <div class="card"><h3>🔧 Hermes Agent</h3><p>Open-source com o harness exposto: loop, memória curada, skills, subagentes e cron. Multi-modelo.</p></div>
-    <div class="card"><h3>🟣 Claude Cowork</h3><p>Gerenciado. Ambiente da Anthropic voltado a trabalho colaborativo.</p></div>
-    <div class="card"><h3>🟢 ChatGPT Work</h3><p>Gerenciado. Oferta da OpenAI para trabalho e conectores corporativos.</p></div>
-    <div class="card"><h3>🐾 OpenClaw</h3><p>Runtime open-source para rodar em infraestrutura própria.</p></div>
-    <div class="card"><h3>🏗️ Sistema próprio (DIY)</h3><p>Arquitetura agnóstica de modelo, montada a partir dos seus requisitos.</p></div>
-  </div>
+<span class="chip">Dossiês</span>
+<h2>Seis caminhos, um arquivo cada</h2>
+<p class="sub">Na auditoria completa a skill lê todos. Nos outros modos, só os que interessam ao caso.</p>
+<div class="grid g3">
+<div class="card"><h3>🤖 Grok Bot</h3><p>Gerenciado. Bot da xAI integrado ao ecossistema do X.</p></div>
+<div class="card"><h3>🔧 Hermes Agent</h3><p>Open-source com o harness exposto: loop, memória curada, skills, subagentes e cron. Multi-modelo.</p></div>
+<div class="card"><h3>🟣 Claude Cowork</h3><p>Gerenciado. Ambiente da Anthropic voltado a trabalho colaborativo.</p></div>
+<div class="card"><h3>🟢 ChatGPT Work</h3><p>Gerenciado. Oferta da OpenAI para trabalho e conectores corporativos.</p></div>
+<div class="card"><h3>🐾 OpenClaw</h3><p>Runtime open-source para rodar em infraestrutura própria.</p></div>
+<div class="card"><h3>🏗️ Sistema próprio (DIY)</h3><p>Arquitetura agnóstica de modelo, montada a partir dos seus requisitos.</p></div>
+</div>
 </div></section>
-
 <section id="notas"><div class="wrap">
-  <span class="chip">Limites e licença</span>
-  <h2>O que este material não é</h2>
-  <p class="sub">Vale saber antes de tratar qualquer número daqui como verdade permanente.</p>
-  <div class="phase"><div class="tag">Data</div><div class="d"><strong>A pesquisa tem trava de data</strong><span>Os dossiês estão travados em 23/08/2026 e o mapa em 21/08/2026. Preço, limite e disponibilidade mudam rápido — a skill reverifica fontes de primeira parte quando tem navegação.</span></div></div>
-  <div class="phase"><div class="tag">Autoria</div><div class="d"><strong>Material de terceiro</strong><span>Guia, prompt e skill são de Mark Kashef, sob licença MIT. Este repositório mantém <code>kit/</code>, <code>origem/</code> e <code>zips/</code> como cópia fiel do upstream.</span></div></div>
-  <div class="phase"><div class="tag">Tradução</div><div class="d"><strong>A tradução é obra derivada nossa</strong><span>Vive em <code>traducao/</code>, fora do upstream, como a MIT permite. Serve para leitura; para executar, use sempre o original em inglês.</span></div></div>
-  <div class="phase"><div class="tag">Escopo</div><div class="d"><strong>Não substitui o seu julgamento</strong><span>O pacote de decisão entrega veredito, tabela de aderência, runner-up, inventário do que se perde e um piloto com critério de saída — mas quem assina a escolha é você.</span></div></div>
+<span class="chip">Limites e licença</span>
+<h2>O que este material não é</h2>
+<p class="sub">Vale saber antes de tratar qualquer número daqui como verdade permanente.</p>
+<div class="phase"><div class="tag">Data</div><div class="d"><strong>A pesquisa tem trava de data</strong><span>Os dossiês estão travados em 23/08/2026 e o mapa em 21/08/2026. Preço, limite e disponibilidade mudam rápido — a skill reverifica fontes de primeira parte quando tem navegação.</span></div></div>
+<div class="phase"><div class="tag">Autoria</div><div class="d"><strong>Material de terceiro</strong><span>Guia, prompt e skill são de Mark Kashef, sob licença MIT. Este repositório mantém <code>kit/</code>, <code>origem/</code> e <code>zips/</code> como cópia fiel do upstream.</span></div></div>
+<div class="phase"><div class="tag">Tradução</div><div class="d"><strong>A tradução é obra derivada nossa</strong><span>Vive em <code>traducao/</code>, fora do upstream, como a MIT permite. Serve para leitura; para executar, use sempre o original em inglês.</span></div></div>
+<div class="phase"><div class="tag">Escopo</div><div class="d"><strong>Não substitui o seu julgamento</strong><span>O pacote de decisão entrega veredito, tabela de aderência, runner-up, inventário do que se perde e um piloto com critério de saída — mas quem assina a escolha é você.</span></div></div>
 </div></section>
-</footer>
 
 <script>
   (function(){

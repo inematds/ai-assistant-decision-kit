@@ -1,5 +1,7 @@
 # AI Assistant Decision Kit
 
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
 Material de **terceiro**, baixado em 2026-08-24 para estudo. Ajuda a decidir **qual modelo de assistente de IA pessoal adotar** — ou a não trocar de plataforma à toa — em vez de reconstruir o mesmo assistente cada vez que sai um produto novo.
 
 - **Autor:** Mark Kashef
